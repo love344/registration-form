@@ -1,0 +1,433 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: #f4f7fb;
+
+    color: #1f2937;
+
+    min-height: 100vh;
+}
+
+
+/* Header */
+
+.header {
+    background: #17365d;
+
+    color: white;
+
+    padding: 18px 8%;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.logo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.logo-icon {
+    background: white;
+
+    color: #17365d;
+
+    width: 45px;
+
+    height: 45px;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 23px;
+}
+
+
+.logo h2 {
+    font-size: 20px;
+}
+
+
+.logo p {
+    font-size: 12px;
+
+    opacity: 0.8;
+
+    margin-top: 3px;
+}
+
+
+/* Main */
+
+.main {
+    padding: 45px 20px;
+}
+
+
+/* Form Container */
+
+.form-container {
+    max-width: 900px;
+
+    margin: auto;
+
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 35px;
+
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Form Header */
+
+.form-header {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    margin-bottom: 25px;
+}
+
+
+.student-icon {
+    width: 60px;
+
+    height: 60px;
+
+    background: #eaf1f8;
+
+    color: #17365d;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 28px;
+}
+
+
+.form-header h1 {
+    color: #17365d;
+
+    font-size: 27px;
+
+    margin-bottom: 5px;
+}
+
+
+.form-header p {
+    color: #6b7280;
+
+    font-size: 14px;
+}
+
+
+/* Section Titles */
+
+.section-title {
+    color: #17365d;
+
+    font-size: 17px;
+
+    margin: 25px 0 15px;
+
+    padding-bottom: 8px;
+
+    border-bottom: 2px solid #eaf1f8;
+}
+
+
+/* Form Grid */
+
+.form-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+}
+
+
+/* Form Group */
+
+.form-group {
+    margin-bottom: 5px;
+}
+
+
+.form-group label {
+    display: block;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
+
+    color: #374151;
+}
+
+
+.form-group label span {
+    color: #dc2626;
+}
+
+
+/* Inputs */
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+
+    outline: none;
+
+    background: white;
+
+    transition: 0.2s;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #17365d;
+
+    box-shadow: 0 0 0 3px rgba(23, 54, 93, 0.1);
+}
+
+
+textarea {
+    resize: vertical;
+}
+
+
+/* Gender */
+
+.gender-options {
+    display: flex;
+
+    gap: 20px;
+
+    padding-top: 10px;
+}
+
+
+.radio-label {
+    display: flex !important;
+
+    align-items: center;
+
+    gap: 6px;
+
+    font-weight: normal !important;
+
+    cursor: pointer;
+}
+
+
+.radio-label input {
+    width: auto;
+}
+
+
+/* Terms */
+
+.terms {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 25px;
+
+    font-size: 13px;
+
+    color: #4b5563;
+}
+
+
+.terms input {
+    width: auto;
+}
+
+
+/* Buttons */
+
+.buttons {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 12px;
+
+    margin-top: 25px;
+}
+
+
+button {
+    padding: 12px 25px;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.reset-btn {
+    background: white;
+
+    color: #374151;
+
+    border: 1px solid #d1d5db;
+}
+
+
+.reset-btn:hover {
+    background: #f3f4f6;
+}
+
+
+.register-btn {
+    background: #17365d;
+
+    color: white;
+
+    border: none;
+}
+
+
+.register-btn:hover {
+    background: #0f2745;
+
+    transform: translateY(-1px);
+}
+
+
+/* Message */
+
+#message {
+    margin-top: 20px;
+
+    padding: 12px;
+
+    text-align: center;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    display: none;
+}
+
+
+.success {
+    display: block !important;
+
+    background: #dcfce7;
+
+    color: #166534;
+}
+
+
+.error {
+    display: block !important;
+
+    background: #fee2e2;
+
+    color: #991b1b;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+
+    padding: 20px;
+
+    color: #6b7280;
+
+    font-size: 13px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .main {
+        padding: 25px 12px;
+    }
+
+    .form-container {
+        padding: 22px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-header h1 {
+        font-size: 22px;
+    }
+
+    .gender-options {
+        gap: 12px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+
+}
